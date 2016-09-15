@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<meta charset="uft-8">
+<title>jQuery2-Assignment4-Change background color of div</title>
+<script>
+/* This is another method 
+$(document).ready(function(){
+    $("div").on("click", "button", function(event) {
+         $(event.delegateTarget).css("background-color","green")
+	});
+}); */
+	
+$(document).ready(function(){
+	$("div").on("click", function(){
+	     $(this).css("background","red")
+	});
+});
+</script>
+</head>
+<body>
+
+<div style="background-color:yellow">
+     <p>Click the button to change the background color of this paragraph.</p>
+     <button>Click me!</button>
+</div>
+
+</body>
+</html>
